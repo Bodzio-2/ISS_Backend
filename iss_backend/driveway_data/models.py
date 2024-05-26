@@ -11,6 +11,6 @@ class DrivewayEntry(models.Model):
         Take = 'Take'
         Free = 'Free'
 
-    parking_spot = models.ForeignKey('ParkingSpot')
+    parking_spot = models.ForeignKey('ParkingSpot', on_delete=models.PROTECT)
     timestamp = models.DateTimeField()
     action = models.CharField(max_length=100)

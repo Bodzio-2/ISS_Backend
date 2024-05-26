@@ -31,3 +31,8 @@ def get_parking_spot(spot_id: int) -> dict:
     parking_spot_dict = get_fields(parking_spot)
 
     return parking_spot_dict
+
+def create_parking_spot(json_data: dict) -> ParkingSpot:
+    new_parking_spot = ParkingSpot.objects.create(**json_data)
+
+    return new_parking_spot

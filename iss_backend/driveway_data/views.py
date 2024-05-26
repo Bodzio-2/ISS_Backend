@@ -8,6 +8,7 @@ from django.views import View
 from .models import *
 import iss_backend.utils.view_utils as view_utils
 from iss_backend.utils.http_options_decorator import add_http_options
+from utils.data_serializer import ParkingSpotSerializer
 
 # Create your views here.
 
@@ -36,4 +37,13 @@ class ParkingSpotView:
         def post(request) -> JsonResponse:
             json_data = loads(request.body)
 
-            
+            data_ser = ParkingSpotSerializer(data=json_data)
+
+            if data_ser.is_valid():
+                try:
+                    new_parking_spot = view_utils.create_parking_spot(json_data)
+                    return JsonResponse({"parking_spot" : {"id": new_parking_spot.id, "data": {**json_data}}}, status=201)
+                except Exception as e:
+                    print("An unexpected Exception occured: ", str(e))
+            else:
+                return JsonResponse({"error": "Provided parking spot data is invalid!"}, status=400)
