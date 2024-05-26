@@ -10,5 +10,5 @@
 - POST parking_spot/
   - example data:
   { "tags": "handicapped, bigger_spot" }
-- GET parking_spot/<id>/
+- GET parking_spot/{id}/
 - GET parking_spot_actions/
