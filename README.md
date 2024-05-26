@@ -5,7 +5,7 @@
 - python manage.py runserver
 - profit!
 
-
+## Server url: http://127.0.0.1:8000
 ## Current endpoints:
 - POST parking_spot/
   - example data:
