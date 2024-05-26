@@ -6,8 +6,8 @@ from django.http import JsonResponse, HttpResponse
 from django.shortcuts import render
 from django.views import View
 from .models import *
-import iss_backend.utils.view_utils as view_utils
-from iss_backend.utils.http_options_decorator import add_http_options
+import utils.view_utils as view_utils
+from utils.http_options_decorator import add_http_options
 from utils.data_serializer import ParkingSpotSerializer
 
 # Create your views here.
@@ -16,7 +16,7 @@ from utils.data_serializer import ParkingSpotSerializer
 class ParkingSpotView:
     @add_http_options
     class GetId(View):
-        http_method_names = ['get', 'post']
+        http_method_names = ['get']
 
         @staticmethod
         def get(request, spot_id: int) -> JsonResponse:
@@ -32,7 +32,10 @@ class ParkingSpotView:
                         "id_not_found": spot_id,
                     },
                 }, status=404)
-        
+    @add_http_options
+    class Post(View):
+        http_method_names = ['post']
+
         @staticmethod
         def post(request) -> JsonResponse:
             json_data = loads(request.body)
@@ -47,3 +50,12 @@ class ParkingSpotView:
                     print("An unexpected Exception occured: ", str(e))
             else:
                 return JsonResponse({"error": "Provided parking spot data is invalid!"}, status=400)
+            
+class ParkingSpotActionsView:
+    @add_http_options
+    class GetActionEnum(View):
+        http_method_names = ['get']
+
+        @staticmethod
+        def get(request) -> JsonResponse:
+            return JsonResponse({a:a.value for a in DrivewayEntry.Action}, status=200)

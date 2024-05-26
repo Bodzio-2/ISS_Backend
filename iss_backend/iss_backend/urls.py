@@ -16,7 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from driveway_data import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('parking_spot/<int:spot_id>/', views.ParkingSpotView.GetId.as_view()),
+    path('parking_spot/', views.ParkingSpotView.Post.as_view()),
+    path('parking_spot_actions/', views.ParkingSpotActionsView.GetActionEnum.as_view()),
 ]
