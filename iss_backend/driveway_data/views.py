@@ -68,8 +68,27 @@ class DrivewayEntryView:
     @staticmethod
     def get(request, spot_id) -> JsonResponse:
         # Returns a list of all entries for that spot
-        
-        pass
+        try:
+            parking_spot = ParkingSpot.objects.get(spot_id)
+        except ObjectDoesNotExist as error:
+            return JsonResponse({
+                    "error": "Parking Spot with specified id wasn't found!",
+                    "details": str(error),
+                    "error_data": {
+                        "id_not_found": spot_id,
+                    },
+                }, status=404)
+
+        try:
+            entries = DrivewayEntry.objects.filter(parking_spot == parking_spot)
+            print(type(entries))
+            return JsonResponse({entries}, status=200)
+        except Exception as error:
+            return JsonResponse({
+                "error" : "an unexpected exception occured!",
+                "details" : str(error)
+            }, status=500)
+
 
     @staticmethod
     def post(request, spot_id) -> JsonResponse:
@@ -89,7 +108,25 @@ class DrivewayEntryView:
     @staticmethod
     def delete(request, spot_id) -> JsonResponse:
         # Deletes all entries from given spot
-        pass
+        try:
+            parking_spot = ParkingSpot.objects.get(spot_id)
+        except ObjectDoesNotExist as error:
+            return JsonResponse({
+                    "error": "Parking Spot with specified id wasn't found!",
+                    "details": str(error),
+                    "error_data": {
+                        "id_not_found": spot_id,
+                    },
+                }, status=404)
+        
+        entries = DrivewayEntry.objects.filter(parking_spot = parking_spot)
+
+        for entry in entries:
+            entry.delete()
+
+        return JsonResponse({
+            "success"
+        }, status = 200)
     
     @add_http_options
     class SpecificEntry:
@@ -103,7 +140,7 @@ class DrivewayEntryView:
                 return JsonResponse({"parking_spot" : parking_spot}, status=200)
             except ObjectDoesNotExist as error:
                 return JsonResponse({
-                    "error": "Parking Spot with specified id wasn't found!",
+                    "error": "Driveway entry with specified id wasn't found!",
                     "details": str(error),
                     "error_data": {
                         "id_not_found": entry_id,
@@ -116,7 +153,7 @@ class DrivewayEntryView:
                 DrivewayEntry.objects.delete(entry_id)
             except ObjectDoesNotExist as error:
                 return JsonResponse({
-                    "error": "Parking Spot with specified id wasn't found!",
+                    "error": "Driveway entry with specified id wasn't found!",
                     "details": str(error),
                     "error_data": {
                         "id_not_found": entry_id,

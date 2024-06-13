@@ -38,6 +38,7 @@ def create_parking_spot(json_data: dict) -> ParkingSpot:
     return new_parking_spot
 
 def create_driveway_entry(json_data: dict) -> DrivewayEntry:
+        
     pass
 
 def get_driveway_entry(entry_id: int) -> dict:
