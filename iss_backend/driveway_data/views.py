@@ -97,8 +97,30 @@ class DrivewayEntryView:
 
         def get(request, entry_id) -> JsonResponse:
             # get an entry of a specific ID
-            pass
+            try:
+                parking_spot = view_utils.get_driveway_entry(entry_id)
+
+                return JsonResponse({"parking_spot" : parking_spot}, status=200)
+            except ObjectDoesNotExist as error:
+                return JsonResponse({
+                    "error": "Parking Spot with specified id wasn't found!",
+                    "details": str(error),
+                    "error_data": {
+                        "id_not_found": entry_id,
+                    },
+                }, status=404)
 
         def delete(request, entry_id) -> JsonResponse:
             # delete a specific entry
-            pass
+            try:
+                DrivewayEntry.objects.delete(entry_id)
+            except ObjectDoesNotExist as error:
+                return JsonResponse({
+                    "error": "Parking Spot with specified id wasn't found!",
+                    "details": str(error),
+                    "error_data": {
+                        "id_not_found": entry_id,
+                    },
+                }, status=404)
+            
+            return JsonResponse({"deleted_id" : entry_id}, status=200)
