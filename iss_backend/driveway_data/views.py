@@ -9,6 +9,7 @@ from .models import *
 import utils.view_utils as view_utils
 from utils.http_options_decorator import add_http_options
 from utils.data_serializer import ParkingSpotSerializer
+from utils.data_serializer import DrivewayEntrySerializer
 
 # Create your views here.
 
@@ -59,3 +60,45 @@ class ParkingSpotActionsView:
         @staticmethod
         def get(request) -> JsonResponse:
             return JsonResponse({a:a.value for a in DrivewayEntry.Action}, status=200)
+        
+@add_http_options
+class DrivewayEntryView:
+    http_method_names = ['get', 'post', 'delete']
+
+    @staticmethod
+    def get(request, spot_id) -> JsonResponse:
+        # Returns a list of all entries for that spot
+        
+        pass
+
+    @staticmethod
+    def post(request, spot_id) -> JsonResponse:
+        # Adds a new entry to a given spot
+        json_data = loads(request.body)
+
+        data_ser = DrivewayEntrySerializer(data=json_data)
+
+        if data_ser.is_valid():
+            try:
+                new_entry = view_utils.create_driveway_entry(json_data)
+                return JsonResponse({"driveway_entry" : {"id": new_entry.id, "data" : {**json_data}}}, status=201)
+            except Exception as e:
+                return JsonResponse({"error": "Internal server error: " + str(e)}, status = 500)
+        else:
+            return JsonResponse({})
+    @staticmethod
+    def delete(request, spot_id) -> JsonResponse:
+        # Deletes all entries from given spot
+        pass
+    
+    @add_http_options
+    class SpecificEntry:
+        http_method_names = ['get, delete']
+
+        def get(request, entry_id) -> JsonResponse:
+            # get an entry of a specific ID
+            pass
+
+        def delete(request, entry_id) -> JsonResponse:
+            # delete a specific entry
+            pass

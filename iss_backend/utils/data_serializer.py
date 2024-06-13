@@ -8,3 +8,10 @@ class ParkingSpotSerializer(serializers.ModelSerializer):
         model = ParkingSpot
         fields = ['tags']
         depth = 3
+
+
+class DrivewayEntrySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = DrivewayEntry
+        fields = ['parking_spot', 'timestamp', 'action']
+        depth = 3

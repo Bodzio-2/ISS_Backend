@@ -36,3 +36,13 @@ def create_parking_spot(json_data: dict) -> ParkingSpot:
     new_parking_spot = ParkingSpot.objects.create(**json_data)
 
     return new_parking_spot
+
+def create_driveway_entry(json_data: dict) -> DrivewayEntry:
+    pass
+
+def get_driveway_entry(entry_id: int) -> dict:
+    driveway_entry = DrivewayEntry.objects.get(id=entry_id)
+
+    driveway_entry_dict = get_fields(driveway_entry)
+
+    return driveway_entry_dict
