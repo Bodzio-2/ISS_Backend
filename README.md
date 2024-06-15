@@ -6,6 +6,13 @@
   - If that fails, try "python manage.py makemigrations driveway_data; python manage.py migrate"
 - profit!
 
+## DB Preview
+`http://127.0.0.1:8000/admin/`
+ - default Login: `admin`
+ - default Password: `admin`
+
+ If user does not exist, add new one with `python manage.py createsuperuser`
+
 ## Server url: http://127.0.0.1:8000
 ## Current endpoints:
 - **POST** `parking_spot/` - create a new parking spot
