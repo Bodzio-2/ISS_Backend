@@ -102,9 +102,9 @@ class DrivewayEntryView:
                 new_entry = view_utils.create_driveway_entry(json_data)
                 return JsonResponse({"driveway_entry" : {"id": new_entry.id, "data" : {**json_data}}}, status=201)
             except Exception as e:
-                return JsonResponse({"error": "Internal server error: " + str(e)}, status = 500)
+                return JsonResponse({"error": "Internal server error: " + str(e)}, status = 401)
         else:
-            return JsonResponse({})
+            return JsonResponse({"error": "Invalid data!"}, status=401)
     @staticmethod
     def delete(request, spot_id) -> JsonResponse:
         # Deletes all entries from given spot

@@ -39,7 +39,15 @@ def create_parking_spot(json_data: dict) -> ParkingSpot:
 
 def create_driveway_entry(json_data: dict) -> DrivewayEntry:
     # TODO create helper function for creating a new driveway entry
-    pass
+    for parking_spot in ParkingSpot.objects.all():
+        if json_data['parking_spot_id'] == parking_spot.pk:
+            del json_data['parking_spot_id']
+            DrivewayEntry.objects.create(**json_data, parking_spot=parking_spot)
+            return
+    raise Exception("Parking spot with given ID was not found")
+    
+
+
 
 def get_driveway_entry(entry_id: int) -> dict:
     driveway_entry = DrivewayEntry.objects.get(id=entry_id)
