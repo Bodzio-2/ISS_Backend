@@ -23,4 +23,8 @@ urlpatterns = [
     path('parking_spot/<int:spot_id>/', views.ParkingSpotView.GetId.as_view()),
     path('parking_spot/', views.ParkingSpotView.Post.as_view()),
     path('parking_spot_actions/', views.ParkingSpotActionsView.GetActionEnum.as_view()),
+    path('parking_spot/<int:spot_id>/', views.DrivewayEntryView.Get.as_view()),
+    path('parking_spot/<int:spot_id>/new_entry/', views.DrivewayEntryView.Post.as_view()),
+    path('parking_spot/<int:spot_id>/delete_all/', views.DrivewayEntryView.Delete.as_view()),
+    path('parking_spot/<int:spot_id>/all_entries/', views.DrivewayEntryView.Get.as_view()),
 ]
