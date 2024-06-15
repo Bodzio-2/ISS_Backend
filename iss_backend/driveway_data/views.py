@@ -159,8 +159,8 @@ class SpecificEntryView:
         def get(request, entry_id) -> JsonResponse:
             # get an entry of a specific ID
             try:
-                parking_spot = view_utils.get_driveway_entry(entry_id)
-                return JsonResponse({"parking_spot" : parking_spot}, status=200)
+                driveway_entry = view_utils.get_driveway_entry(entry_id)
+                return JsonResponse({driveway_entry}, status=200)
             except ObjectDoesNotExist as error:
                 return JsonResponse({
                     "error": "Driveway entry with specified id wasn't found!",
