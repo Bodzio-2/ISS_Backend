@@ -1,0 +1,832 @@
+[
+    {
+        "timestamp": "2024-05-07 13:41:00",
+        "parking_spot": "2",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-07 13:41:00",
+        "parking_spot": "3",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-07 13:53:30",
+        "parking_spot": "1",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-07 14:44:50",
+        "parking_spot": "1",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-07 15:04:10",
+        "parking_spot": "1",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-07 15:16:30",
+        "parking_spot": "1",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-07 17:29:10",
+        "parking_spot": "1",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-07 17:38:40",
+        "parking_spot": "1",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-07 17:44:40",
+        "parking_spot": "1",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-07 17:53:50",
+        "parking_spot": "1",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-07 18:11:50",
+        "parking_spot": "1",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-07 18:20:00",
+        "parking_spot": "1",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-07 18:22:40",
+        "parking_spot": "1",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-07 22:47:10",
+        "parking_spot": "1",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-08 05:58:50",
+        "parking_spot": "1",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-08 06:02:10",
+        "parking_spot": "1",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-08 06:59:30",
+        "parking_spot": "1",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-08 14:50:50",
+        "parking_spot": "1",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-08 15:07:20",
+        "parking_spot": "1",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-08 15:14:40",
+        "parking_spot": "1",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-08 15:15:40",
+        "parking_spot": "1",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-08 15:17:30",
+        "parking_spot": "1",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-08 15:18:30",
+        "parking_spot": "1",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-08 15:20:10",
+        "parking_spot": "1",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-08 15:21:10",
+        "parking_spot": "1",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-08 15:25:30",
+        "parking_spot": "1",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-08 15:26:00",
+        "parking_spot": "1",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-08 15:27:30",
+        "parking_spot": "1",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-08 16:25:20",
+        "parking_spot": "2",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-08 16:33:00",
+        "parking_spot": "2",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-08 16:52:50",
+        "parking_spot": "2",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-08 16:57:40",
+        "parking_spot": "2",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-08 17:12:20",
+        "parking_spot": "1",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-08 17:26:50",
+        "parking_spot": "2",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-08 17:27:40",
+        "parking_spot": "2",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-08 17:51:10",
+        "parking_spot": "1",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-09 06:30:10",
+        "parking_spot": "2",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-09 07:00:10",
+        "parking_spot": "1",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-09 07:02:50",
+        "parking_spot": "2",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-09 07:07:00",
+        "parking_spot": "2",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-09 07:38:20",
+        "parking_spot": "2",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-09 07:42:10",
+        "parking_spot": "2",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-09 07:50:30",
+        "parking_spot": "2",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-09 14:43:00",
+        "parking_spot": "1",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-09 15:18:50",
+        "parking_spot": "2",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-09 15:19:20",
+        "parking_spot": "2",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-09 15:39:20",
+        "parking_spot": "2",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-09 15:47:00",
+        "parking_spot": "2",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-09 15:55:50",
+        "parking_spot": "2",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-09 15:59:30",
+        "parking_spot": "2",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-09 16:07:30",
+        "parking_spot": "1",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-09 16:25:40",
+        "parking_spot": "1",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-09 16:56:20",
+        "parking_spot": "2",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-09 17:02:00",
+        "parking_spot": "2",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-09 17:36:00",
+        "parking_spot": "2",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-09 17:55:40",
+        "parking_spot": "2",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-09 17:58:30",
+        "parking_spot": "2",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-09 18:21:30",
+        "parking_spot": "2",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-09 18:40:00",
+        "parking_spot": "2",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-09 19:31:40",
+        "parking_spot": "2",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-09 19:50:50",
+        "parking_spot": "2",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-09 20:22:00",
+        "parking_spot": "1",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-09 20:28:00",
+        "parking_spot": "1",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-09 20:53:20",
+        "parking_spot": "2",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-09 21:17:50",
+        "parking_spot": "2",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-09 21:29:40",
+        "parking_spot": "2",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-10 02:41:10",
+        "parking_spot": "1",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-10 02:42:50",
+        "parking_spot": "1",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-10 06:24:30",
+        "parking_spot": "1",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-10 06:25:40",
+        "parking_spot": "1",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-10 06:31:10",
+        "parking_spot": "2",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-10 06:59:50",
+        "parking_spot": "3",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-10 07:01:00",
+        "parking_spot": "3",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-10 07:28:40",
+        "parking_spot": "2",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-10 07:30:00",
+        "parking_spot": "2",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-10 07:33:50",
+        "parking_spot": "2",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-10 08:32:50",
+        "parking_spot": "1",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-10 08:47:30",
+        "parking_spot": "1",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-10 08:58:00",
+        "parking_spot": "1",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-10 09:30:00",
+        "parking_spot": "2",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-10 09:30:50",
+        "parking_spot": "2",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-10 10:32:40",
+        "parking_spot": "2",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-10 10:45:10",
+        "parking_spot": "2",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-10 10:45:50",
+        "parking_spot": "1",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-10 11:05:10",
+        "parking_spot": "1",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-10 12:30:20",
+        "parking_spot": "2",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-10 12:34:00",
+        "parking_spot": "2",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-10 13:28:10",
+        "parking_spot": "2",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-10 13:43:40",
+        "parking_spot": "2",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-10 13:45:40",
+        "parking_spot": "2",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-10 13:47:40",
+        "parking_spot": "2",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-10 13:52:30",
+        "parking_spot": "2",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-10 13:55:00",
+        "parking_spot": "2",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-10 14:09:00",
+        "parking_spot": "1",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-10 14:10:40",
+        "parking_spot": "1",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-10 14:18:10",
+        "parking_spot": "1",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-10 14:20:10",
+        "parking_spot": "1",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-10 14:29:50",
+        "parking_spot": "1",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-10 15:21:20",
+        "parking_spot": "1",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-10 15:29:50",
+        "parking_spot": "1",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-10 15:32:30",
+        "parking_spot": "1",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-10 15:43:30",
+        "parking_spot": "1",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-10 18:26:40",
+        "parking_spot": "2",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-10 18:43:40",
+        "parking_spot": "2",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-10 20:07:50",
+        "parking_spot": "2",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-10 20:45:30",
+        "parking_spot": "2",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-10 20:55:50",
+        "parking_spot": "2",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-10 21:04:10",
+        "parking_spot": "2",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-10 21:14:40",
+        "parking_spot": "3",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-10 21:14:40",
+        "parking_spot": "2",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-10 21:15:00",
+        "parking_spot": "3",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-10 21:35:00",
+        "parking_spot": "3",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-10 21:38:30",
+        "parking_spot": "3",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-10 21:40:00",
+        "parking_spot": "2",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-10 23:13:20",
+        "parking_spot": "3",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-10 23:13:20",
+        "parking_spot": "2",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-10 23:13:40",
+        "parking_spot": "3",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-10 23:52:00",
+        "parking_spot": "2",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-11 07:48:40",
+        "parking_spot": "1",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-11 07:51:10",
+        "parking_spot": "1",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-11 08:03:50",
+        "parking_spot": "1",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-11 08:07:50",
+        "parking_spot": "1",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-11 08:21:10",
+        "parking_spot": "1",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-11 08:36:50",
+        "parking_spot": "1",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-11 09:26:00",
+        "parking_spot": "3",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-11 09:26:30",
+        "parking_spot": "3",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-11 09:33:00",
+        "parking_spot": "2",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-11 09:55:00",
+        "parking_spot": "2",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-11 10:09:50",
+        "parking_spot": "2",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-11 10:13:20",
+        "parking_spot": "2",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-11 10:33:40",
+        "parking_spot": "1",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-11 10:35:00",
+        "parking_spot": "2",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-11 10:38:50",
+        "parking_spot": "2",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-11 10:46:50",
+        "parking_spot": "2",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-11 10:52:40",
+        "parking_spot": "2",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-11 10:55:10",
+        "parking_spot": "2",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-11 10:58:00",
+        "parking_spot": "2",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-11 11:09:10",
+        "parking_spot": "2",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-11 11:13:00",
+        "parking_spot": "2",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-11 11:17:00",
+        "parking_spot": "2",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-11 11:34:10",
+        "parking_spot": "2",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-11 11:58:30",
+        "parking_spot": "2",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-11 12:05:40",
+        "parking_spot": "2",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-11 12:34:10",
+        "parking_spot": "2",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-11 12:37:00",
+        "parking_spot": "2",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-11 13:26:00",
+        "parking_spot": "1",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-11 13:49:30",
+        "parking_spot": "2",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-11 14:15:30",
+        "parking_spot": "2",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-11 14:18:20",
+        "parking_spot": "2",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-11 14:28:50",
+        "parking_spot": "2",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-11 14:29:20",
+        "parking_spot": "2",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-11 15:06:40",
+        "parking_spot": "2",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-12 06:35:40",
+        "parking_spot": "3",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-12 06:38:40",
+        "parking_spot": "3",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-12 10:42:20",
+        "parking_spot": "1",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-12 10:42:50",
+        "parking_spot": "1",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-12 12:39:30",
+        "parking_spot": "1",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-12 13:07:00",
+        "parking_spot": "1",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-12 15:58:50",
+        "parking_spot": "1",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-12 16:03:30",
+        "parking_spot": "1",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-12 16:56:00",
+        "parking_spot": "1",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-12 16:57:30",
+        "parking_spot": "1",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-12 19:34:10",
+        "parking_spot": "2",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-12 19:34:30",
+        "parking_spot": "3",
+        "action": "Free"
+    },
+    {
+        "timestamp": "2024-05-12 19:38:50",
+        "parking_spot": "3",
+        "action": "Take"
+    },
+    {
+        "timestamp": "2024-05-12 19:39:20",
+        "parking_spot": "2",
+        "action": "Take"
+    }
+]
